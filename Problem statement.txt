@@ -1,0 +1,24 @@
+As a data analyst, you receive a complaint from a client regarding the dashboard data for a specific market. The client notes that the value displayed on the dashboard exceeds their expected threshold for that market, suggesting a potential issue with the data.
+
+To address this concern, you begin an investigation and discover that the data being loaded into the database appears to be missing some transactions. This is a common situation in data analysis where discrepancies between data sources need to be resolved.
+
+You initiate a series of meetings with the data provider to discuss and rectify the issue. After several rounds of discussions, you realised that the data provider have not included few mkcid and data for few months for various markets.
+
+Your task is now to identify discrepancies between these two data sets. Specifically, you need to determine which markets and dates are affected by missing data. so that the data provider can then send those files again and you can load it to the database so that it reflects in the dashboards.
+
+Here are a few steps to guide you through the process:
+
+1.Overview: The main objective is to compare the data from the source provider file with the data in the database file.
+2.Identify Unique Keys: To perform the comparison, begin by identifying a unique key for each record. This key will be used to match the corresponding data between the two files.
+3.Excel-Based Comparison: Start by using Excel for the comparison. Utilize Excel functions to create the unique keys and compare the data efficiently.
+4.Data Segregation: Once you have generated the unique keys and consolidated the data onto a single sheet, categorize the data by market name. Each market should have its own dedicated Excel tab for clarity and organization.
+
+Additional Considerations:
+
+After completing this task in Excel, you might notice how time-consuming it is to correct date formats, map country codes, and handle other repetitive tasks. This raises the question: What if we could automate the entire process?
+
+ Automation Idea:
+At a high level, the goal of the automated process would be to simply input two files—one from the data source provider and the other from the database—and receive an output file with the comparison results.
+
+Next Steps:
+You can try implementing this automation using Python. If you encounter any difficulties, feel free to reach out in the doubts channel on Slack. I've already developed a Python code to automate this process, so I can assist you along the way.
